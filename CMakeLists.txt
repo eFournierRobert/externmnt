@@ -11,5 +11,6 @@ target_sources(externmnt
         src/main.cpp
         src/drive/drive.cpp
         src/drive/cifs/cifsDrive.cpp
+        src/utils/util.cpp
         src/drive/driveManager.cpp
 )

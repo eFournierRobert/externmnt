@@ -17,4 +17,6 @@ public:
 
     virtual void mount() = 0;
     virtual std::string toString() = 0;
+
+    virtual ~Drive() = default;
 };

@@ -18,7 +18,7 @@ CifsDrive::CifsDrive(
 }
 
 void CifsDrive::setPassword(std::string password) {
-    std::cout << "Not implemented yet\n";
+    this->password = password;
 }
 
 void CifsDrive::mount() {

@@ -3,7 +3,7 @@
 #include "../drive.h"
 #include <filesystem>
 
-class CifsDrive : Drive {
+class CifsDrive : public Drive {
 private:
     std::string username;
     std::string password;

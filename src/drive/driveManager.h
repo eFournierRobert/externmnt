@@ -1,12 +1,11 @@
 #pragma once
 
 #include <vector>
-
-#include "cifs/cifsDrive.h"
+#include "drive.h"
 
 class DriveManager {
 private :
-    std::vector<CifsDrive> cifsDriveVec;
+    std::vector<std::shared_ptr<Drive>> driveVec;
 public :
     DriveManager();
 
