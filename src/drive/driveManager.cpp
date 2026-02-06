@@ -12,7 +12,9 @@
 #include <unistd.h>
 #include <pwd.h>
 
-DriveManager::DriveManager() {}
+DriveManager::DriveManager() {
+    driveVec = util::readDrive();
+}
 
 void DriveManager::addNewCifsDrive() {
     uid_t uid = getuid();

@@ -1,4 +1,4 @@
-#include "../include/CLI11.hpp"
+#include <CLI/CLI.hpp>
 #include "drive/driveManager.h"
 
 void initCifsSubCom(CLI::App* subcom, bool* registerFlag) {
