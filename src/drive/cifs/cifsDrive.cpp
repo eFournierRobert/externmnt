@@ -1,5 +1,6 @@
 #include "cifsDrive.h"
 #include <iostream>
+#include <nlohmann/json_fwd.hpp>
 
 CifsDrive::CifsDrive(
     std::string name,
@@ -27,5 +28,15 @@ void CifsDrive::mount() {
 }
 
 std::string CifsDrive::toString() {
-    return "Not implemented yet\n";
+    nlohmann::json j = nlohmann::json {
+        {"type", type},
+        {"name", name},
+        {"uid", uid},
+        {"gid", gid},
+        {"username", username},
+        {"networkPath", networkPath},
+        {"localPath", localPath}
+    };
+
+    return j.dump(4);
 }

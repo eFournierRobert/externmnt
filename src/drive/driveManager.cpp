@@ -79,5 +79,14 @@ void DriveManager::addNewCifsDrive() {
 }
 
 std::string DriveManager::toString() {
-    return "Not implemented yet";
+    std::stringstream ss;
+    ss << "[\n";
+
+    for (auto& d : driveVec) {
+        ss << d->toString();
+        ss << ",\n";
+    }
+
+    ss << "\n]";
+    return ss.str();
 }

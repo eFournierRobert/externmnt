@@ -2,6 +2,7 @@
 
 #include <filesystem>
 #include <string>
+#include <nlohmann/json.hpp>
 
 class Drive {
 protected:
