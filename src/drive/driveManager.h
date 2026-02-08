@@ -9,7 +9,6 @@ private :
 public :
     DriveManager();
 
-    void addNewCifsDrive();
-
+    void mountAllDrives();
     std::string toString();
 };
