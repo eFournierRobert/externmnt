@@ -13,7 +13,7 @@
 #include <pwd.h>
 
 DriveManager::DriveManager() {
-    driveVec = util::readDrive();
+    driveVec = util::readDrives();
 }
 
 void DriveManager::addNewCifsDrive() {

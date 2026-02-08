@@ -9,6 +9,7 @@ CifsDrive::CifsDrive(
     std::filesystem::path networkPath,
     std::filesystem::path localPath
 ) {
+    this->type = "cifs";
     this->name = name;
     this->uid = uid;
     this->gid = gid;

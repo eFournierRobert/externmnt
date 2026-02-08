@@ -4,7 +4,7 @@ project(externmnt)
 
 add_executable(externmnt)
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
+set(CMAKE_BUILD_TYPE Debug)
 
 target_sources(externmnt
     PRIVATE

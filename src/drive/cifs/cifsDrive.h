@@ -7,7 +7,6 @@ class CifsDrive : public Drive {
 private:
     std::string username;
     std::string password;
-
 public:
     CifsDrive(
         std::string name,

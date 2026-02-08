@@ -5,6 +5,7 @@
 
 class Drive {
 protected:
+    std::string type;
     std::string name;
     std::string uid;
     std::string gid;
